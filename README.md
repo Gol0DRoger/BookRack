@@ -7,9 +7,9 @@
 
 ---
 
-## 📽️ Project Demo
+## Project Demo
 
-> ## Watch the walkthrough of the BookRack system below.
+> ## Watch the walkthrough of the BookRack:
 https://github.com/user-attachments/assets/4478d0d0-eb55-4087-8d08-79cb2ad88bde
 
 > ## Screenshots:
