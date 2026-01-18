@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_bookstore
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    image: rishabh106/bookstore-backend:v1 # Pulls from your Docker Hub
+    ports:
+      - "5555:5555"
+    environment:
+      - MONGO_URL=mongodb://mongodb:27017/bookstore
+    depends_on:
+      - mongodb
+
+  frontend:
+    image: rishabh106/bookstore-frontend:v1 # Pulls from your Docker Hub
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:

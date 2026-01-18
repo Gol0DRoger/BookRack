@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --theme-beige: #f8f1e3;
+  --theme-brown: #4b2c20;
+  --theme-brown-dark: #36190d;
+  --theme-brown-light: #d1b798;
+}
+
+body {
+  background-color: var(--theme-beige);
+  color: var(--theme-brown);
+  min-height: 100vh;
+}
+
+button,
+.bg-sky-300,
+.bg-sky-600,
+.bg-sky-800,
+.bg-red-600,
+.bg-red-300 {
+  background-color: var(--theme-brown) !important;
+  color: var(--theme-beige) !important;
+  border-color: var(--theme-brown) !important;
+}
+
+button:hover,
+.hover\:bg-sky-600:hover {
+  background-color: var(--theme-brown-dark) !important;
+}
+
+.text-sky-800,
+.text-green-800,
+.text-yellow-600,
+.text-red-600,
+.text-red-300,
+.text-gray-500,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p {
+  color: var(--theme-brown) !important;
+}
+
+.border-sky-400,
+.border-gray-500,
+.border-slate-600,
+.border-slate-700,
+.border-slate-400,
+.border-slate-300,
+.border-slate-500 {
+  border-color: var(--theme-brown-light) !important;
+}
+
+table th,
+table td {
+  border-color: var(--theme-brown-light) !important;
+}
+
+input,
+textarea {
+  border-color: var(--theme-brown-light) !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--theme-brown);
+}
+
+svg {
+  color: var(--theme-brown);
+}
+
+.back-button-icon {
+  color: var(--theme-beige) !important;
+}
